@@ -19,6 +19,7 @@ jobs:
         gem install bundler
         cd brakeman && bundle install
     - name: Scan
+      continue-on-error: true
       run: |
         brakeman/bin/brakeman -o output.sarif .
     - name: Expose artifact
@@ -30,4 +31,3 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: output.sarif
-
