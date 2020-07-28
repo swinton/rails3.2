@@ -1,0 +1,1242 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Brakeman",
+          "informationUri": "https://brakemanscanner.org",
+          "rules": [
+            {
+              "id": "102",
+              "shortDescription": {
+                "text": "Checks for XSS in calls to content_tag"
+              },
+              "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
+              "properties": {
+                "warningType": "Cross-Site Scripting",
+                "checkName": "ContentTag"
+              }
+            },
+            {
+              "id": "77",
+              "shortDescription": {
+                "text": "Checks for default routes"
+              },
+              "helpUri": "http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
+              "properties": {
+                "warningType": "Remote Code Execution",
+                "checkName": "DefaultRoutes"
+              }
+            },
+            {
+              "id": "14",
+              "shortDescription": {
+                "text": "Finds instances of possible command injection"
+              },
+              "helpUri": "https://brakemanscanner.org/docs/warning_types/command_injection/",
+              "properties": {
+                "warningType": "Command Injection",
+                "checkName": "Execute"
+              }
+            },
+            {
+              "id": "63",
+              "shortDescription": {
+                "text": "Checks for i18n XSS (CVE-2013-4491)"
+              },
+              "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
+              "properties": {
+                "warningType": "Cross-Site Scripting",
+                "checkName": "I18nXSS"
+              }
+            },
+            {
+              "id": "49",
+              "shortDescription": {
+                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269"
+              },
+              "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
+              "properties": {
+                "warningType": "Remote Code Execution",
+                "checkName": "JSONParsing"
+              }
+            },
+            {
+              "id": "94",
+              "shortDescription": {
+                "text": "Checks for mime type denial of service (CVE-2016-0751)"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
+              "properties": {
+                "warningType": "Denial of Service",
+                "checkName": "MimeTypeDoS"
+              }
+            },
+            {
+              "id": "73",
+              "shortDescription": {
+                "text": "Checks for number helpers XSS vulnerabilities in certain versions"
+              },
+              "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
+              "properties": {
+                "warningType": "Cross-Site Scripting",
+                "checkName": "NumberToCurrency"
+              }
+            },
+            {
+              "id": "18",
+              "shortDescription": {
+                "text": "Looks for calls to redirect_to with user input as arguments"
+              },
+              "helpUri": "https://brakemanscanner.org/docs/warning_types/redirect/",
+              "properties": {
+                "warningType": "Redirect",
+                "checkName": "Redirect"
+              }
+            },
+            {
+              "id": "75",
+              "shortDescription": {
+                "text": "Warn about denial of service with render :text (CVE-2014-0082)"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
+              "properties": {
+                "warningType": "Denial of Service",
+                "checkName": "RenderDoS"
+              }
+            },
+            {
+              "id": "108",
+              "shortDescription": {
+                "text": "Checks for CVE-2018-3760"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
+              "properties": {
+                "warningType": "Path Traversal",
+                "checkName": "SprocketsPathTraversal"
+              }
+            },
+            {
+              "id": "46",
+              "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
+              "properties": {
+                "warningType": "SQL Injection",
+                "checkName": "SQLCVEs"
+              }
+            },
+            {
+              "id": "47",
+              "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
+              "properties": {
+                "warningType": "SQL Injection",
+                "checkName": "SQLCVEs"
+              }
+            },
+            {
+              "id": "69",
+              "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
+              "properties": {
+                "warningType": "SQL Injection",
+                "checkName": "SQLCVEs"
+              }
+            },
+            {
+              "id": "55",
+              "shortDescription": {
+                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
+              "properties": {
+                "warningType": "Denial of Service",
+                "checkName": "SymbolDoSCVE"
+              }
+            },
+            {
+              "id": "88",
+              "shortDescription": {
+                "text": "Checks for XML denial of service (CVE-2015-3227)"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
+              "properties": {
+                "warningType": "Denial of Service",
+                "checkName": "XMLDoS"
+              }
+            },
+            {
+              "id": "48",
+              "shortDescription": {
+                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)"
+              },
+              "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
+              "properties": {
+                "warningType": "Remote Code Execution",
+                "checkName": "YAMLParsing"
+              }
+            },
+            {
+              "id": "2",
+              "shortDescription": {
+                "text": "Checks for unescaped output in views"
+              },
+              "helpUri": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+              "properties": {
+                "warningType": "Cross-Site Scripting",
+                "checkName": "CrossSiteScripting"
+              }
+            },
+            {
+              "id": "56",
+              "shortDescription": {
+                "text": "Checks for versions with vulnerable sanitize and sanitize_css"
+              },
+              "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
+              "properties": {
+                "warningType": "Cross-Site Scripting",
+                "checkName": "SanitizeMethods"
+              }
+            },
+            {
+              "id": "12",
+              "shortDescription": {
+                "text": "Checks for default routes"
+              },
+              "helpUri": "https://brakemanscanner.org/docs/warning_types/default_routes/",
+              "properties": {
+                "warningType": "Default Routes",
+                "checkName": "DefaultRoutes"
+              }
+            },
+            {
+              "id": "60",
+              "shortDescription": {
+                "text": "Reports models which have dangerous attributes defined via attr_accessible"
+              },
+              "helpUri": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+              "properties": {
+                "warningType": "Mass Assignment",
+                "checkName": "ModelAttrAccessible"
+              }
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "Gemfile.lock"
+          }
+        },
+        {
+          "location": {
+            "uri": "config/routes.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/controllers/exec_controller.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/controllers/exec_controller/command_dependency.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/models/multi_model.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/models/user/command_dependency.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/controllers/removal_controller.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/removal/_partial.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/removal/controller_removed.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/removal/implicit_render.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/_form.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/_slimmer.html.slim"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/mixed_in.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/show.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/slimming.html.slim"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/views/users/sanitized.html.erb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/models/account.rb"
+          }
+        },
+        {
+          "location": {
+            "uri": "app/models/user.rb"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 `content_tag` does not escape double quotes in attribute values (CVE-2016-6316). Upgrade to Rails 3.2.22.4"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "102",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 with globbing routes is vulnerable to directory traversal and remote code execution. Patch or upgrade to Rails 3.2.18"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "77",
+          "ruleIndex": 1
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible command injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/controllers/exec_controller.rb",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "14",
+          "ruleIndex": 2
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible command injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/controllers/exec_controller/command_dependency.rb",
+                  "index": 3
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "14",
+          "ruleIndex": 2
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible command injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/multi_model.rb",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "14",
+          "ruleIndex": 2
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible command injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/multi_model.rb",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "14",
+          "ruleIndex": 2
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible command injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/user/command_dependency.rb",
+                  "index": 5
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "14",
+          "ruleIndex": 2
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has an XSS vulnerability in i18n 0.6.1 (CVE-2013-4491). Upgrade to Rails 4.0.2 or i18n 0.6.6"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "63",
+          "ruleIndex": 3
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "json gem 1.7.5 has a remote code execution vulnerability. Upgrade to json gem 1.7.7"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "49",
+          "ruleIndex": 4
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via mime type caching (CVE-2016-0751). Upgrade to Rails 3.2.22.1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "94",
+          "ruleIndex": 5
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has a vulnerability in number helpers (CVE-2014-0081). Upgrade to Rails 3.2.17"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "73",
+          "ruleIndex": 6
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Possible unprotected redirect"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/controllers/removal_controller.rb",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "18",
+          "ruleIndex": 7
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability (CVE-2014-0082). Upgrade to Rails 3.2.17"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "75",
+          "ruleIndex": 8
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "sprockets 2.1.3 has a path traversal vulnerability (CVE-2018-3760). Upgrade to sprockets 2.12.5 or newer"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "108",
+          "ruleIndex": 9
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2012-5664). Upgrade to Rails 3.2.18"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "46",
+          "ruleIndex": 10
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-0155). Upgrade to Rails 3.2.11"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "47",
+          "ruleIndex": 11
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-6417). Upgrade to Rails 3.2.16"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "69",
+          "ruleIndex": 12
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability in ActiveRecord. Upgrade to Rails 3.2.13 or patch"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "55",
+          "ruleIndex": 13
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via XML parsing (CVE-2015-3227). Upgrade to Rails 3.2.22"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "88",
+          "ruleIndex": 14
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has a remote code execution vulnerability. Upgrade to Rails 3.2.11 or disable XML parsing"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Gemfile.lock",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "48",
+          "ruleIndex": 15
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped model attribute"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/removal/_partial.html.erb",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped parameter value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/removal/controller_removed.html.erb",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped parameter value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/removal/implicit_render.html.erb",
+                  "index": 9
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped model attribute"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/_form.html.erb",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped parameter value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/_slimmer.html.slim",
+                  "index": 11
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped model attribute"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/_slimmer.html.slim",
+                  "index": 11
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped model attribute"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/mixed_in.html.erb",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped parameter value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/show.html.erb",
+                  "index": 13
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped parameter value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/slimming.html.slim",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Unescaped model attribute"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/slimming.html.slim",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "2",
+          "ruleIndex": 16
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Rails 3.2.9.rc2 has a vulnerability in `sanitize_css`. Upgrade to Rails 3.2.13 or patch"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/views/users/sanitized.html.erb",
+                  "index": 15
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "56",
+          "ruleIndex": 17
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `GlobGetController` can be used as an action for `get` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `GlobPostController` can be used as an action for `post` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `GlobPutController` can be used as an action for `put` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `GlobMatchController` can be used as an action for `matched` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `FooGetController` can be used as an action for `get` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `FooPostController` can be used as an action for `post` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `FooPutController` can be used as an action for `put` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Any public method in `BarMatchController` can be used as an action for `matched` requests."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/routes.rb",
+                  "index": 1
+                }
+              }
+            }
+          ],
+          "ruleId": "12",
+          "ruleIndex": 18
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Potentially dangerous attribute available for mass assignment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/account.rb",
+                  "index": 16
+                }
+              }
+            }
+          ],
+          "ruleId": "60",
+          "ruleIndex": 19
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Potentially dangerous attribute available for mass assignment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/account.rb",
+                  "index": 16
+                }
+              }
+            }
+          ],
+          "ruleId": "60",
+          "ruleIndex": 19
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Potentially dangerous attribute available for mass assignment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/user.rb",
+                  "index": 17
+                }
+              }
+            }
+          ],
+          "ruleId": "60",
+          "ruleIndex": 19
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Potentially dangerous attribute available for mass assignment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/user.rb",
+                  "index": 17
+                }
+              }
+            }
+          ],
+          "ruleId": "60",
+          "ruleIndex": 19
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Potentially dangerous attribute available for mass assignment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/models/user.rb",
+                  "index": 17
+                }
+              }
+            }
+          ],
+          "ruleId": "60",
+          "ruleIndex": 19
+        }
+      ]
+    }
+  ]
+}
