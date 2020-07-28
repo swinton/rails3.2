@@ -5,227 +5,367 @@
     {
       "tool": {
         "driver": {
-          "name": "Brakeman",
+          "name": "Brakeman-d753065",
           "informationUri": "https://brakemanscanner.org",
           "rules": [
             {
               "id": "102",
+              "name": "Cross-Site Scripting",
               "shortDescription": {
+                "text": "Checks for XSS in calls to content_tag"
+              },
+              "fullDescription": {
                 "text": "Checks for XSS in calls to content_tag"
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
               "properties": {
                 "warningType": "Cross-Site Scripting",
-                "checkName": "ContentTag"
+                "checkName": "ContentTag",
+                "tags": [
+                  "ContentTag"
+                ]
               }
             },
             {
               "id": "77",
+              "name": "Remote Code Execution",
               "shortDescription": {
+                "text": "Checks for default routes"
+              },
+              "fullDescription": {
                 "text": "Checks for default routes"
               },
               "helpUri": "http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
               "properties": {
                 "warningType": "Remote Code Execution",
-                "checkName": "DefaultRoutes"
+                "checkName": "DefaultRoutes",
+                "tags": [
+                  "DefaultRoutes"
+                ]
               }
             },
             {
               "id": "14",
+              "name": "Command Injection",
               "shortDescription": {
+                "text": "Finds instances of possible command injection"
+              },
+              "fullDescription": {
                 "text": "Finds instances of possible command injection"
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/command_injection/",
               "properties": {
                 "warningType": "Command Injection",
-                "checkName": "Execute"
+                "checkName": "Execute",
+                "tags": [
+                  "Execute"
+                ]
               }
             },
             {
               "id": "63",
+              "name": "Cross-Site Scripting",
               "shortDescription": {
+                "text": "Checks for i18n XSS (CVE-2013-4491)"
+              },
+              "fullDescription": {
                 "text": "Checks for i18n XSS (CVE-2013-4491)"
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
               "properties": {
                 "warningType": "Cross-Site Scripting",
-                "checkName": "I18nXSS"
+                "checkName": "I18nXSS",
+                "tags": [
+                  "I18nXSS"
+                ]
               }
             },
             {
               "id": "49",
+              "name": "Remote Code Execution",
               "shortDescription": {
+                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269"
+              },
+              "fullDescription": {
                 "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269"
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
               "properties": {
                 "warningType": "Remote Code Execution",
-                "checkName": "JSONParsing"
+                "checkName": "JSONParsing",
+                "tags": [
+                  "JSONParsing"
+                ]
               }
             },
             {
               "id": "94",
+              "name": "Denial of Service",
               "shortDescription": {
+                "text": "Checks for mime type denial of service (CVE-2016-0751)"
+              },
+              "fullDescription": {
                 "text": "Checks for mime type denial of service (CVE-2016-0751)"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
               "properties": {
                 "warningType": "Denial of Service",
-                "checkName": "MimeTypeDoS"
+                "checkName": "MimeTypeDoS",
+                "tags": [
+                  "MimeTypeDoS"
+                ]
               }
             },
             {
               "id": "73",
+              "name": "Cross-Site Scripting",
               "shortDescription": {
+                "text": "Checks for number helpers XSS vulnerabilities in certain versions"
+              },
+              "fullDescription": {
                 "text": "Checks for number helpers XSS vulnerabilities in certain versions"
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
               "properties": {
                 "warningType": "Cross-Site Scripting",
-                "checkName": "NumberToCurrency"
+                "checkName": "NumberToCurrency",
+                "tags": [
+                  "NumberToCurrency"
+                ]
               }
             },
             {
               "id": "18",
+              "name": "Redirect",
               "shortDescription": {
+                "text": "Looks for calls to redirect_to with user input as arguments"
+              },
+              "fullDescription": {
                 "text": "Looks for calls to redirect_to with user input as arguments"
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/redirect/",
               "properties": {
                 "warningType": "Redirect",
-                "checkName": "Redirect"
+                "checkName": "Redirect",
+                "tags": [
+                  "Redirect"
+                ]
               }
             },
             {
               "id": "75",
+              "name": "Denial of Service",
               "shortDescription": {
+                "text": "Warn about denial of service with render :text (CVE-2014-0082)"
+              },
+              "fullDescription": {
                 "text": "Warn about denial of service with render :text (CVE-2014-0082)"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
               "properties": {
                 "warningType": "Denial of Service",
-                "checkName": "RenderDoS"
+                "checkName": "RenderDoS",
+                "tags": [
+                  "RenderDoS"
+                ]
               }
             },
             {
               "id": "108",
+              "name": "Path Traversal",
               "shortDescription": {
+                "text": "Checks for CVE-2018-3760"
+              },
+              "fullDescription": {
                 "text": "Checks for CVE-2018-3760"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
               "properties": {
                 "warningType": "Path Traversal",
-                "checkName": "SprocketsPathTraversal"
+                "checkName": "SprocketsPathTraversal",
+                "tags": [
+                  "SprocketsPathTraversal"
+                ]
               }
             },
             {
               "id": "46",
+              "name": "SQL Injection",
               "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "fullDescription": {
                 "text": "Checks for several SQL CVEs"
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
               "properties": {
                 "warningType": "SQL Injection",
-                "checkName": "SQLCVEs"
+                "checkName": "SQLCVEs",
+                "tags": [
+                  "SQLCVEs"
+                ]
               }
             },
             {
               "id": "47",
+              "name": "SQL Injection",
               "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "fullDescription": {
                 "text": "Checks for several SQL CVEs"
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
               "properties": {
                 "warningType": "SQL Injection",
-                "checkName": "SQLCVEs"
+                "checkName": "SQLCVEs",
+                "tags": [
+                  "SQLCVEs"
+                ]
               }
             },
             {
               "id": "69",
+              "name": "SQL Injection",
               "shortDescription": {
+                "text": "Checks for several SQL CVEs"
+              },
+              "fullDescription": {
                 "text": "Checks for several SQL CVEs"
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
               "properties": {
                 "warningType": "SQL Injection",
-                "checkName": "SQLCVEs"
+                "checkName": "SQLCVEs",
+                "tags": [
+                  "SQLCVEs"
+                ]
               }
             },
             {
               "id": "55",
+              "name": "Denial of Service",
               "shortDescription": {
+                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability"
+              },
+              "fullDescription": {
                 "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
               "properties": {
                 "warningType": "Denial of Service",
-                "checkName": "SymbolDoSCVE"
+                "checkName": "SymbolDoSCVE",
+                "tags": [
+                  "SymbolDoSCVE"
+                ]
               }
             },
             {
               "id": "88",
+              "name": "Denial of Service",
               "shortDescription": {
+                "text": "Checks for XML denial of service (CVE-2015-3227)"
+              },
+              "fullDescription": {
                 "text": "Checks for XML denial of service (CVE-2015-3227)"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
               "properties": {
                 "warningType": "Denial of Service",
-                "checkName": "XMLDoS"
+                "checkName": "XMLDoS",
+                "tags": [
+                  "XMLDoS"
+                ]
               }
             },
             {
               "id": "48",
+              "name": "Remote Code Execution",
               "shortDescription": {
+                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)"
+              },
+              "fullDescription": {
                 "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)"
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
               "properties": {
                 "warningType": "Remote Code Execution",
-                "checkName": "YAMLParsing"
+                "checkName": "YAMLParsing",
+                "tags": [
+                  "YAMLParsing"
+                ]
               }
             },
             {
               "id": "2",
+              "name": "Cross-Site Scripting",
               "shortDescription": {
+                "text": "Checks for unescaped output in views"
+              },
+              "fullDescription": {
                 "text": "Checks for unescaped output in views"
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
               "properties": {
                 "warningType": "Cross-Site Scripting",
-                "checkName": "CrossSiteScripting"
+                "checkName": "CrossSiteScripting",
+                "tags": [
+                  "CrossSiteScripting"
+                ]
               }
             },
             {
               "id": "56",
+              "name": "Cross-Site Scripting",
               "shortDescription": {
+                "text": "Checks for versions with vulnerable sanitize and sanitize_css"
+              },
+              "fullDescription": {
                 "text": "Checks for versions with vulnerable sanitize and sanitize_css"
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
               "properties": {
                 "warningType": "Cross-Site Scripting",
-                "checkName": "SanitizeMethods"
+                "checkName": "SanitizeMethods",
+                "tags": [
+                  "SanitizeMethods"
+                ]
               }
             },
             {
               "id": "12",
+              "name": "Default Routes",
               "shortDescription": {
+                "text": "Checks for default routes"
+              },
+              "fullDescription": {
                 "text": "Checks for default routes"
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/default_routes/",
               "properties": {
                 "warningType": "Default Routes",
-                "checkName": "DefaultRoutes"
+                "checkName": "DefaultRoutes",
+                "tags": [
+                  "DefaultRoutes"
+                ]
               }
             },
             {
               "id": "60",
+              "name": "Mass Assignment",
               "shortDescription": {
+                "text": "Reports models which have dangerous attributes defined via attr_accessible"
+              },
+              "fullDescription": {
                 "text": "Reports models which have dangerous attributes defined via attr_accessible"
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
               "properties": {
                 "warningType": "Mass Assignment",
-                "checkName": "ModelAttrAccessible"
+                "checkName": "ModelAttrAccessible",
+                "tags": [
+                  "ModelAttrAccessible"
+                ]
               }
             }
           ]
@@ -234,92 +374,110 @@
       "artifacts": [
         {
           "location": {
-            "uri": "Gemfile.lock"
+            "uri": "Gemfile.lock",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "config/routes.rb"
+            "uri": "config/routes.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/controllers/exec_controller.rb"
+            "uri": "app/controllers/exec_controller.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/controllers/exec_controller/command_dependency.rb"
+            "uri": "app/controllers/exec_controller/command_dependency.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/models/multi_model.rb"
+            "uri": "app/models/multi_model.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/models/user/command_dependency.rb"
+            "uri": "app/models/user/command_dependency.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/controllers/removal_controller.rb"
+            "uri": "app/controllers/removal_controller.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/removal/_partial.html.erb"
+            "uri": "app/views/removal/_partial.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/removal/controller_removed.html.erb"
+            "uri": "app/views/removal/controller_removed.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/removal/implicit_render.html.erb"
+            "uri": "app/views/removal/implicit_render.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/_form.html.erb"
+            "uri": "app/views/users/_form.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/_slimmer.html.slim"
+            "uri": "app/views/users/_slimmer.html.slim",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/mixed_in.html.erb"
+            "uri": "app/views/users/mixed_in.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/show.html.erb"
+            "uri": "app/views/users/show.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/slimming.html.slim"
+            "uri": "app/views/users/slimming.html.slim",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/views/users/sanitized.html.erb"
+            "uri": "app/views/users/sanitized.html.erb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/models/account.rb"
+            "uri": "app/models/account.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         },
         {
           "location": {
-            "uri": "app/models/user.rb"
+            "uri": "app/models/user.rb",
+            "uriBaseId": "%SRCROOT%"
           }
         }
       ],
@@ -334,6 +492,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -356,6 +515,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -374,6 +534,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/controllers/exec_controller.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 2
                 },
                 "region": {
@@ -396,6 +557,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/controllers/exec_controller/command_dependency.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 3
                 },
                 "region": {
@@ -418,6 +580,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/multi_model.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 4
                 },
                 "region": {
@@ -440,6 +603,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/multi_model.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 4
                 },
                 "region": {
@@ -462,6 +626,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/user/command_dependency.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 5
                 },
                 "region": {
@@ -484,6 +649,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -506,6 +672,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -528,6 +695,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -550,6 +718,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -572,6 +741,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/controllers/removal_controller.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 6
                 },
                 "region": {
@@ -594,6 +764,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -616,6 +787,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -638,6 +810,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -660,6 +833,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -682,6 +856,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -704,6 +879,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -726,6 +902,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -748,6 +925,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "Gemfile.lock",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 0
                 },
                 "region": {
@@ -770,6 +948,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/removal/_partial.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 7
                 },
                 "region": {
@@ -792,6 +971,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/removal/controller_removed.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 8
                 },
                 "region": {
@@ -814,6 +994,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/removal/implicit_render.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 9
                 },
                 "region": {
@@ -836,6 +1017,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/_form.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 10
                 },
                 "region": {
@@ -858,6 +1040,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/_slimmer.html.slim",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 11
                 },
                 "region": {
@@ -880,6 +1063,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/_slimmer.html.slim",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 11
                 },
                 "region": {
@@ -902,6 +1086,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/mixed_in.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 12
                 },
                 "region": {
@@ -924,6 +1109,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/show.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 13
                 },
                 "region": {
@@ -946,6 +1132,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/slimming.html.slim",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 14
                 },
                 "region": {
@@ -968,6 +1155,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/slimming.html.slim",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 14
                 },
                 "region": {
@@ -990,6 +1178,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/views/users/sanitized.html.erb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 15
                 },
                 "region": {
@@ -1012,6 +1201,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1030,6 +1220,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1048,6 +1239,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1066,6 +1258,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1084,6 +1277,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1102,6 +1296,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1120,6 +1315,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1138,6 +1334,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "config/routes.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 1
                 }
               }
@@ -1156,6 +1353,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/account.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 16
                 }
               }
@@ -1174,6 +1372,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/account.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 16
                 }
               }
@@ -1192,6 +1391,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/user.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 17
                 }
               }
@@ -1210,6 +1410,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/user.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 17
                 }
               }
@@ -1228,6 +1429,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "app/models/user.rb",
+                  "uriBaseId": "%SRCROOT%",
                   "index": 17
                 }
               }
