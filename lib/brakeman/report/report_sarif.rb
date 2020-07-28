@@ -38,7 +38,7 @@ class Brakeman::Report::SARIF < Brakeman::Report::JSON
         },
         :fullDescription => {
           :text => check_description,
-        }
+        },
         :helpUri => warning.link,
         :properties => {
           :warningType => warning.warning_type,
