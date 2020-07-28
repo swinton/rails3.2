@@ -48,7 +48,8 @@ class Brakeman::Report::SARIF < Brakeman::Report::JSON
     @artifacts ||= unique_locations.map do |location|
       {
         :location => {
-          :uri => location
+          :uri => location,
+          :uriBaseId => '%SRCROOT%',
         }
       }
     end
@@ -66,6 +67,7 @@ class Brakeman::Report::SARIF < Brakeman::Report::JSON
           :physicalLocation => {
             :artifactLocation => {
               :uri => warning.file.relative,
+              :uriBaseId => '%SRCROOT%',
               :index => unique_locations.index { |l| l == warning.file.relative },
             },
           }
@@ -76,6 +78,7 @@ class Brakeman::Report::SARIF < Brakeman::Report::JSON
 
       # Include region in location where applicable
       if warning.line.is_a? Integer
+        # TODO: we may be able to derive startColumn based on user_input
         result[:locations][0][:physicalLocation][:region] = {
           :startLine => warning.line,
           :startColumn => 1,
