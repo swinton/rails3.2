@@ -5,11 +5,11 @@
     {
       "tool": {
         "driver": {
-          "name": "Brakeman-f5ecba0",
+          "name": "Brakeman-4994ae7",
           "informationUri": "https://brakemanscanner.org",
           "rules": [
             {
-              "id": "102",
+              "id": "id:102",
               "name": "name:Cross-Site Scripting",
               "shortDescription": {
                 "text": "shortDescription:Checks for XSS in calls to content_tag"
@@ -58,7 +58,7 @@
               }
             }
           ],
-          "ruleId": "102",
+          "ruleId": "id:102",
           "ruleIndex": 0
         }
       ]
