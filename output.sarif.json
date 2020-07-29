@@ -20,6 +20,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ](https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ)"
               },
               "properties": {
@@ -41,6 +42,7 @@
               },
               "helpUri": "http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
               "help": {
+                "text": "More info: http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
                 "markdown": "More info: [http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf](http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf)"
               },
               "properties": {
@@ -62,6 +64,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/command_injection/",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/command_injection/",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/command_injection/](https://brakemanscanner.org/docs/warning_types/command_injection/)"
               },
               "properties": {
@@ -83,6 +86,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ](https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ)"
               },
               "properties": {
@@ -104,6 +108,7 @@
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
               "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
                 "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion](https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion)"
               },
               "properties": {
@@ -125,6 +130,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ](https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ)"
               },
               "properties": {
@@ -146,6 +152,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ](https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ)"
               },
               "properties": {
@@ -167,6 +174,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/redirect/",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/redirect/",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/redirect/](https://brakemanscanner.org/docs/warning_types/redirect/)"
               },
               "properties": {
@@ -188,6 +196,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ](https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ)"
               },
               "properties": {
@@ -209,6 +218,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/session_setting/",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/session_setting/",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/session_setting/](https://brakemanscanner.org/docs/warning_types/session_setting/)"
               },
               "properties": {
@@ -230,6 +240,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ](https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ)"
               },
               "properties": {
@@ -251,6 +262,7 @@
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
               "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
                 "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion](https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion)"
               },
               "properties": {
@@ -272,6 +284,7 @@
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
               "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
                 "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion](https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion)"
               },
               "properties": {
@@ -293,6 +306,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ](https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ)"
               },
               "properties": {
@@ -314,6 +328,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ](https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ)"
               },
               "properties": {
@@ -335,6 +350,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J](https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J)"
               },
               "properties": {
@@ -356,6 +372,7 @@
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
               "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
                 "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion](https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion)"
               },
               "properties": {
@@ -377,6 +394,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/cross_site_scripting](https://brakemanscanner.org/docs/warning_types/cross_site_scripting)"
               },
               "properties": {
@@ -398,6 +416,7 @@
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
               "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
                 "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J](https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J)"
               },
               "properties": {
@@ -419,6 +438,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/default_routes/",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/default_routes/",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/default_routes/](https://brakemanscanner.org/docs/warning_types/default_routes/)"
               },
               "properties": {
@@ -440,6 +460,7 @@
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
               "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/mass_assignment/",
                 "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/mass_assignment/](https://brakemanscanner.org/docs/warning_types/mass_assignment/)"
               },
               "properties": {
