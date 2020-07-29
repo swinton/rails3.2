@@ -7,17 +7,21 @@
         "driver": {
           "name": "Brakeman",
           "informationUri": "https://brakemanscanner.org",
+          "semanticVersion": "4.8.2",
           "rules": [
             {
-              "id": "102",
-              "name": "Cross-Site Scripting",
+              "id": "BRAKE0102",
+              "name": "ContentTag/Cross-Site Scripting",
               "shortDescription": {
-                "text": "Checks for XSS in calls to content_tag"
+                "text": "Checks for XSS in calls to content_tag."
               },
               "fullDescription": {
-                "text": "Checks for XSS in calls to content_tag"
+                "text": "Checks for XSS in calls to content_tag."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ](https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ)"
+              },
               "properties": {
                 "warningType": "Cross-Site Scripting",
                 "checkName": "ContentTag",
@@ -27,15 +31,18 @@
               }
             },
             {
-              "id": "77",
-              "name": "Remote Code Execution",
+              "id": "BRAKE0077",
+              "name": "DefaultRoutes/Remote Code Execution",
               "shortDescription": {
-                "text": "Checks for default routes"
+                "text": "Checks for default routes."
               },
               "fullDescription": {
-                "text": "Checks for default routes"
+                "text": "Checks for default routes."
               },
               "helpUri": "http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
+              "help": {
+                "markdown": "More info: [http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf](http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf)"
+              },
               "properties": {
                 "warningType": "Remote Code Execution",
                 "checkName": "DefaultRoutes",
@@ -45,15 +52,18 @@
               }
             },
             {
-              "id": "14",
-              "name": "Command Injection",
+              "id": "BRAKE0014",
+              "name": "Execute/Command Injection",
               "shortDescription": {
-                "text": "Finds instances of possible command injection"
+                "text": "Finds instances of possible command injection."
               },
               "fullDescription": {
-                "text": "Finds instances of possible command injection"
+                "text": "Finds instances of possible command injection."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/command_injection/",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/command_injection/](https://brakemanscanner.org/docs/warning_types/command_injection/)"
+              },
               "properties": {
                 "warningType": "Command Injection",
                 "checkName": "Execute",
@@ -63,15 +73,18 @@
               }
             },
             {
-              "id": "63",
-              "name": "Cross-Site Scripting",
+              "id": "BRAKE0063",
+              "name": "I18nXSS/Cross-Site Scripting",
               "shortDescription": {
-                "text": "Checks for i18n XSS (CVE-2013-4491)"
+                "text": "Checks for i18n XSS (CVE-2013-4491)."
               },
               "fullDescription": {
-                "text": "Checks for i18n XSS (CVE-2013-4491)"
+                "text": "Checks for i18n XSS (CVE-2013-4491)."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ](https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ)"
+              },
               "properties": {
                 "warningType": "Cross-Site Scripting",
                 "checkName": "I18nXSS",
@@ -81,15 +94,18 @@
               }
             },
             {
-              "id": "49",
-              "name": "Remote Code Execution",
+              "id": "BRAKE0049",
+              "name": "JSONParsing/Remote Code Execution",
               "shortDescription": {
-                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269"
+                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269."
               },
               "fullDescription": {
-                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269"
+                "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion](https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion)"
+              },
               "properties": {
                 "warningType": "Remote Code Execution",
                 "checkName": "JSONParsing",
@@ -99,15 +115,18 @@
               }
             },
             {
-              "id": "94",
-              "name": "Denial of Service",
+              "id": "BRAKE0094",
+              "name": "MimeTypeDoS/Denial of Service",
               "shortDescription": {
-                "text": "Checks for mime type denial of service (CVE-2016-0751)"
+                "text": "Checks for mime type denial of service (CVE-2016-0751)."
               },
               "fullDescription": {
-                "text": "Checks for mime type denial of service (CVE-2016-0751)"
+                "text": "Checks for mime type denial of service (CVE-2016-0751)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ](https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ)"
+              },
               "properties": {
                 "warningType": "Denial of Service",
                 "checkName": "MimeTypeDoS",
@@ -117,15 +136,18 @@
               }
             },
             {
-              "id": "73",
-              "name": "Cross-Site Scripting",
+              "id": "BRAKE0073",
+              "name": "NumberToCurrency/Cross-Site Scripting",
               "shortDescription": {
-                "text": "Checks for number helpers XSS vulnerabilities in certain versions"
+                "text": "Checks for number helpers XSS vulnerabilities in certain versions."
               },
               "fullDescription": {
-                "text": "Checks for number helpers XSS vulnerabilities in certain versions"
+                "text": "Checks for number helpers XSS vulnerabilities in certain versions."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ](https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ)"
+              },
               "properties": {
                 "warningType": "Cross-Site Scripting",
                 "checkName": "NumberToCurrency",
@@ -135,15 +157,18 @@
               }
             },
             {
-              "id": "18",
-              "name": "Redirect",
+              "id": "BRAKE0018",
+              "name": "Redirect/Redirect",
               "shortDescription": {
-                "text": "Looks for calls to redirect_to with user input as arguments"
+                "text": "Looks for calls to redirect_to with user input as arguments."
               },
               "fullDescription": {
-                "text": "Looks for calls to redirect_to with user input as arguments"
+                "text": "Looks for calls to redirect_to with user input as arguments."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/redirect/",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/redirect/](https://brakemanscanner.org/docs/warning_types/redirect/)"
+              },
               "properties": {
                 "warningType": "Redirect",
                 "checkName": "Redirect",
@@ -153,15 +178,18 @@
               }
             },
             {
-              "id": "75",
-              "name": "Denial of Service",
+              "id": "BRAKE0075",
+              "name": "RenderDoS/Denial of Service",
               "shortDescription": {
-                "text": "Warn about denial of service with render :text (CVE-2014-0082)"
+                "text": "Warn about denial of service with render :text (CVE-2014-0082)."
               },
               "fullDescription": {
-                "text": "Warn about denial of service with render :text (CVE-2014-0082)"
+                "text": "Warn about denial of service with render :text (CVE-2014-0082)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ](https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ)"
+              },
               "properties": {
                 "warningType": "Denial of Service",
                 "checkName": "RenderDoS",
@@ -171,15 +199,18 @@
               }
             },
             {
-              "id": "29",
-              "name": "Session Setting",
+              "id": "BRAKE0029",
+              "name": "SessionSettings/Session Setting",
               "shortDescription": {
-                "text": "Checks for session key length and http_only settings"
+                "text": "Checks for session key length and http_only settings."
               },
               "fullDescription": {
-                "text": "Checks for session key length and http_only settings"
+                "text": "Checks for session key length and http_only settings."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/session_setting/",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/session_setting/](https://brakemanscanner.org/docs/warning_types/session_setting/)"
+              },
               "properties": {
                 "warningType": "Session Setting",
                 "checkName": "SessionSettings",
@@ -189,15 +220,18 @@
               }
             },
             {
-              "id": "108",
-              "name": "Path Traversal",
+              "id": "BRAKE0108",
+              "name": "SprocketsPathTraversal/Path Traversal",
               "shortDescription": {
-                "text": "Checks for CVE-2018-3760"
+                "text": "Checks for CVE-2018-3760."
               },
               "fullDescription": {
-                "text": "Checks for CVE-2018-3760"
+                "text": "Checks for CVE-2018-3760."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ](https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ)"
+              },
               "properties": {
                 "warningType": "Path Traversal",
                 "checkName": "SprocketsPathTraversal",
@@ -207,15 +241,18 @@
               }
             },
             {
-              "id": "46",
-              "name": "SQL Injection",
+              "id": "BRAKE0046",
+              "name": "SQLCVEs/SQL Injection",
               "shortDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "fullDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion](https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion)"
+              },
               "properties": {
                 "warningType": "SQL Injection",
                 "checkName": "SQLCVEs",
@@ -225,15 +262,18 @@
               }
             },
             {
-              "id": "47",
-              "name": "SQL Injection",
+              "id": "BRAKE0047",
+              "name": "SQLCVEs/SQL Injection",
               "shortDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "fullDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion](https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion)"
+              },
               "properties": {
                 "warningType": "SQL Injection",
                 "checkName": "SQLCVEs",
@@ -243,15 +283,18 @@
               }
             },
             {
-              "id": "69",
-              "name": "SQL Injection",
+              "id": "BRAKE0069",
+              "name": "SQLCVEs/SQL Injection",
               "shortDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "fullDescription": {
-                "text": "Checks for several SQL CVEs"
+                "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ](https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ)"
+              },
               "properties": {
                 "warningType": "SQL Injection",
                 "checkName": "SQLCVEs",
@@ -261,15 +304,18 @@
               }
             },
             {
-              "id": "55",
-              "name": "Denial of Service",
+              "id": "BRAKE0055",
+              "name": "SymbolDoSCVE/Denial of Service",
               "shortDescription": {
-                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability"
+                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability."
               },
               "fullDescription": {
-                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability"
+                "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ](https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ)"
+              },
               "properties": {
                 "warningType": "Denial of Service",
                 "checkName": "SymbolDoSCVE",
@@ -279,15 +325,18 @@
               }
             },
             {
-              "id": "88",
-              "name": "Denial of Service",
+              "id": "BRAKE0088",
+              "name": "XMLDoS/Denial of Service",
               "shortDescription": {
-                "text": "Checks for XML denial of service (CVE-2015-3227)"
+                "text": "Checks for XML denial of service (CVE-2015-3227)."
               },
               "fullDescription": {
-                "text": "Checks for XML denial of service (CVE-2015-3227)"
+                "text": "Checks for XML denial of service (CVE-2015-3227)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J](https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J)"
+              },
               "properties": {
                 "warningType": "Denial of Service",
                 "checkName": "XMLDoS",
@@ -297,15 +346,18 @@
               }
             },
             {
-              "id": "48",
-              "name": "Remote Code Execution",
+              "id": "BRAKE0048",
+              "name": "YAMLParsing/Remote Code Execution",
               "shortDescription": {
-                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)"
+                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)."
               },
               "fullDescription": {
-                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)"
+                "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion](https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion)"
+              },
               "properties": {
                 "warningType": "Remote Code Execution",
                 "checkName": "YAMLParsing",
@@ -315,15 +367,18 @@
               }
             },
             {
-              "id": "2",
-              "name": "Cross-Site Scripting",
+              "id": "BRAKE0002",
+              "name": "CrossSiteScripting/Cross-Site Scripting",
               "shortDescription": {
-                "text": "Checks for unescaped output in views"
+                "text": "Checks for unescaped output in views."
               },
               "fullDescription": {
-                "text": "Checks for unescaped output in views"
+                "text": "Checks for unescaped output in views."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/cross_site_scripting](https://brakemanscanner.org/docs/warning_types/cross_site_scripting)"
+              },
               "properties": {
                 "warningType": "Cross-Site Scripting",
                 "checkName": "CrossSiteScripting",
@@ -333,15 +388,18 @@
               }
             },
             {
-              "id": "56",
-              "name": "Cross-Site Scripting",
+              "id": "BRAKE0056",
+              "name": "SanitizeMethods/Cross-Site Scripting",
               "shortDescription": {
-                "text": "Checks for versions with vulnerable sanitize and sanitize_css"
+                "text": "Checks for versions with vulnerable sanitize and sanitize_css."
               },
               "fullDescription": {
-                "text": "Checks for versions with vulnerable sanitize and sanitize_css"
+                "text": "Checks for versions with vulnerable sanitize and sanitize_css."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
+              "help": {
+                "markdown": "More info: [https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J](https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J)"
+              },
               "properties": {
                 "warningType": "Cross-Site Scripting",
                 "checkName": "SanitizeMethods",
@@ -351,15 +409,18 @@
               }
             },
             {
-              "id": "12",
-              "name": "Default Routes",
+              "id": "BRAKE0012",
+              "name": "DefaultRoutes/Default Routes",
               "shortDescription": {
-                "text": "Checks for default routes"
+                "text": "Checks for default routes."
               },
               "fullDescription": {
-                "text": "Checks for default routes"
+                "text": "Checks for default routes."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/default_routes/",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/default_routes/](https://brakemanscanner.org/docs/warning_types/default_routes/)"
+              },
               "properties": {
                 "warningType": "Default Routes",
                 "checkName": "DefaultRoutes",
@@ -369,15 +430,18 @@
               }
             },
             {
-              "id": "60",
-              "name": "Mass Assignment",
+              "id": "BRAKE0060",
+              "name": "ModelAttrAccessible/Mass Assignment",
               "shortDescription": {
-                "text": "Reports models which have dangerous attributes defined via attr_accessible"
+                "text": "Reports models which have dangerous attributes defined via attr_accessible."
               },
               "fullDescription": {
-                "text": "Reports models which have dangerous attributes defined via attr_accessible"
+                "text": "Reports models which have dangerous attributes defined via attr_accessible."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+              "help": {
+                "markdown": "More info: [https://brakemanscanner.org/docs/warning_types/mass_assignment/](https://brakemanscanner.org/docs/warning_types/mass_assignment/)"
+              },
               "properties": {
                 "warningType": "Mass Assignment",
                 "checkName": "ModelAttrAccessible",
@@ -509,7 +573,7 @@
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 `content_tag` does not escape double quotes in attribute values (CVE-2016-6316). Upgrade to Rails 3.2.22.4"
+            "text": "Rails 3.2.9.rc2 `content_tag` does not escape double quotes in attribute values (CVE-2016-6316). Upgrade to Rails 3.2.22.4."
           },
           "locations": [
             {
@@ -526,13 +590,13 @@
               }
             }
           ],
-          "ruleId": "102",
+          "ruleId": "BRAKE0102",
           "ruleIndex": 0
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 with globbing routes is vulnerable to directory traversal and remote code execution. Patch or upgrade to Rails 3.2.18"
+            "text": "Rails 3.2.9.rc2 with globbing routes is vulnerable to directory traversal and remote code execution. Patch or upgrade to Rails 3.2.18."
           },
           "locations": [
             {
@@ -545,13 +609,13 @@
               }
             }
           ],
-          "ruleId": "77",
+          "ruleId": "BRAKE0077",
           "ruleIndex": 1
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible command injection"
+            "text": "Possible command injection."
           },
           "locations": [
             {
@@ -568,13 +632,13 @@
               }
             }
           ],
-          "ruleId": "14",
+          "ruleId": "BRAKE0014",
           "ruleIndex": 2
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible command injection"
+            "text": "Possible command injection."
           },
           "locations": [
             {
@@ -591,13 +655,13 @@
               }
             }
           ],
-          "ruleId": "14",
+          "ruleId": "BRAKE0014",
           "ruleIndex": 2
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible command injection"
+            "text": "Possible command injection."
           },
           "locations": [
             {
@@ -614,13 +678,13 @@
               }
             }
           ],
-          "ruleId": "14",
+          "ruleId": "BRAKE0014",
           "ruleIndex": 2
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible command injection"
+            "text": "Possible command injection."
           },
           "locations": [
             {
@@ -637,13 +701,13 @@
               }
             }
           ],
-          "ruleId": "14",
+          "ruleId": "BRAKE0014",
           "ruleIndex": 2
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible command injection"
+            "text": "Possible command injection."
           },
           "locations": [
             {
@@ -660,13 +724,13 @@
               }
             }
           ],
-          "ruleId": "14",
+          "ruleId": "BRAKE0014",
           "ruleIndex": 2
         },
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 has an XSS vulnerability in i18n 0.6.1 (CVE-2013-4491). Upgrade to Rails 4.0.2 or i18n 0.6.6"
+            "text": "Rails 3.2.9.rc2 has an XSS vulnerability in i18n 0.6.1 (CVE-2013-4491). Upgrade to Rails 4.0.2 or i18n 0.6.6."
           },
           "locations": [
             {
@@ -683,13 +747,13 @@
               }
             }
           ],
-          "ruleId": "63",
+          "ruleId": "BRAKE0063",
           "ruleIndex": 3
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "json gem 1.7.5 has a remote code execution vulnerability. Upgrade to json gem 1.7.7"
+            "text": "json gem 1.7.5 has a remote code execution vulnerability. Upgrade to json gem 1.7.7."
           },
           "locations": [
             {
@@ -706,13 +770,13 @@
               }
             }
           ],
-          "ruleId": "49",
+          "ruleId": "BRAKE0049",
           "ruleIndex": 4
         },
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via mime type caching (CVE-2016-0751). Upgrade to Rails 3.2.22.1"
+            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via mime type caching (CVE-2016-0751). Upgrade to Rails 3.2.22.1."
           },
           "locations": [
             {
@@ -729,13 +793,13 @@
               }
             }
           ],
-          "ruleId": "94",
+          "ruleId": "BRAKE0094",
           "ruleIndex": 5
         },
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 has a vulnerability in number helpers (CVE-2014-0081). Upgrade to Rails 3.2.17"
+            "text": "Rails 3.2.9.rc2 has a vulnerability in number helpers (CVE-2014-0081). Upgrade to Rails 3.2.17."
           },
           "locations": [
             {
@@ -752,13 +816,13 @@
               }
             }
           ],
-          "ruleId": "73",
+          "ruleId": "BRAKE0073",
           "ruleIndex": 6
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Possible unprotected redirect"
+            "text": "Possible unprotected redirect."
           },
           "locations": [
             {
@@ -775,13 +839,13 @@
               }
             }
           ],
-          "ruleId": "18",
+          "ruleId": "BRAKE0018",
           "ruleIndex": 7
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability (CVE-2014-0082). Upgrade to Rails 3.2.17"
+            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability (CVE-2014-0082). Upgrade to Rails 3.2.17."
           },
           "locations": [
             {
@@ -798,13 +862,13 @@
               }
             }
           ],
-          "ruleId": "75",
+          "ruleId": "BRAKE0075",
           "ruleIndex": 8
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Session secret should not be included in version control"
+            "text": "Session secret should not be included in version control."
           },
           "locations": [
             {
@@ -821,13 +885,13 @@
               }
             }
           ],
-          "ruleId": "29",
+          "ruleId": "BRAKE0029",
           "ruleIndex": 9
         },
         {
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "sprockets 2.1.3 has a path traversal vulnerability (CVE-2018-3760). Upgrade to sprockets 2.12.5 or newer"
+            "text": "sprockets 2.1.3 has a path traversal vulnerability (CVE-2018-3760). Upgrade to sprockets 2.12.5 or newer."
           },
           "locations": [
             {
@@ -844,13 +908,13 @@
               }
             }
           ],
-          "ruleId": "108",
+          "ruleId": "BRAKE0108",
           "ruleIndex": 10
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2012-5664). Upgrade to Rails 3.2.18"
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2012-5664). Upgrade to Rails 3.2.18."
           },
           "locations": [
             {
@@ -867,13 +931,13 @@
               }
             }
           ],
-          "ruleId": "46",
+          "ruleId": "BRAKE0046",
           "ruleIndex": 11
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-0155). Upgrade to Rails 3.2.11"
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-0155). Upgrade to Rails 3.2.11."
           },
           "locations": [
             {
@@ -890,13 +954,13 @@
               }
             }
           ],
-          "ruleId": "47",
+          "ruleId": "BRAKE0047",
           "ruleIndex": 12
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-6417). Upgrade to Rails 3.2.16"
+            "text": "Rails 3.2.9.rc2 contains a SQL injection vulnerability (CVE-2013-6417). Upgrade to Rails 3.2.16."
           },
           "locations": [
             {
@@ -913,13 +977,13 @@
               }
             }
           ],
-          "ruleId": "69",
+          "ruleId": "BRAKE0069",
           "ruleIndex": 13
         },
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability in ActiveRecord. Upgrade to Rails 3.2.13 or patch"
+            "text": "Rails 3.2.9.rc2 has a denial of service vulnerability in ActiveRecord. Upgrade to Rails 3.2.13 or patch."
           },
           "locations": [
             {
@@ -936,13 +1000,13 @@
               }
             }
           ],
-          "ruleId": "55",
+          "ruleId": "BRAKE0055",
           "ruleIndex": 14
         },
         {
           "level": "warning",
           "message": {
-            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via XML parsing (CVE-2015-3227). Upgrade to Rails 3.2.22"
+            "text": "Rails 3.2.9.rc2 is vulnerable to denial of service via XML parsing (CVE-2015-3227). Upgrade to Rails 3.2.22."
           },
           "locations": [
             {
@@ -959,13 +1023,13 @@
               }
             }
           ],
-          "ruleId": "88",
+          "ruleId": "BRAKE0088",
           "ruleIndex": 15
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 has a remote code execution vulnerability. Upgrade to Rails 3.2.11 or disable XML parsing"
+            "text": "Rails 3.2.9.rc2 has a remote code execution vulnerability. Upgrade to Rails 3.2.11 or disable XML parsing."
           },
           "locations": [
             {
@@ -982,13 +1046,13 @@
               }
             }
           ],
-          "ruleId": "48",
+          "ruleId": "BRAKE0048",
           "ruleIndex": 16
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped model attribute"
+            "text": "Unescaped model attribute."
           },
           "locations": [
             {
@@ -1005,13 +1069,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped parameter value"
+            "text": "Unescaped parameter value."
           },
           "locations": [
             {
@@ -1028,13 +1092,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped parameter value"
+            "text": "Unescaped parameter value."
           },
           "locations": [
             {
@@ -1051,13 +1115,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped model attribute"
+            "text": "Unescaped model attribute."
           },
           "locations": [
             {
@@ -1074,13 +1138,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped parameter value"
+            "text": "Unescaped parameter value."
           },
           "locations": [
             {
@@ -1097,13 +1161,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped model attribute"
+            "text": "Unescaped model attribute."
           },
           "locations": [
             {
@@ -1120,13 +1184,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped model attribute"
+            "text": "Unescaped model attribute."
           },
           "locations": [
             {
@@ -1143,13 +1207,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped parameter value"
+            "text": "Unescaped parameter value."
           },
           "locations": [
             {
@@ -1166,13 +1230,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped parameter value"
+            "text": "Unescaped parameter value."
           },
           "locations": [
             {
@@ -1189,13 +1253,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Unescaped model attribute"
+            "text": "Unescaped model attribute."
           },
           "locations": [
             {
@@ -1212,13 +1276,13 @@
               }
             }
           ],
-          "ruleId": "2",
+          "ruleId": "BRAKE0002",
           "ruleIndex": 17
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Rails 3.2.9.rc2 has a vulnerability in `sanitize_css`. Upgrade to Rails 3.2.13 or patch"
+            "text": "Rails 3.2.9.rc2 has a vulnerability in `sanitize_css`. Upgrade to Rails 3.2.13 or patch."
           },
           "locations": [
             {
@@ -1235,7 +1299,7 @@
               }
             }
           ],
-          "ruleId": "56",
+          "ruleId": "BRAKE0056",
           "ruleIndex": 18
         },
         {
@@ -1254,7 +1318,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1273,7 +1337,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1292,7 +1356,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1311,7 +1375,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1330,7 +1394,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1349,7 +1413,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1368,7 +1432,7 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
@@ -1387,13 +1451,13 @@
               }
             }
           ],
-          "ruleId": "12",
+          "ruleId": "BRAKE0012",
           "ruleIndex": 19
         },
         {
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "Potentially dangerous attribute available for mass assignment"
+            "text": "Potentially dangerous attribute available for mass assignment."
           },
           "locations": [
             {
@@ -1406,13 +1470,13 @@
               }
             }
           ],
-          "ruleId": "60",
+          "ruleId": "BRAKE0060",
           "ruleIndex": 20
         },
         {
           "level": "warning",
           "message": {
-            "text": "Potentially dangerous attribute available for mass assignment"
+            "text": "Potentially dangerous attribute available for mass assignment."
           },
           "locations": [
             {
@@ -1425,13 +1489,13 @@
               }
             }
           ],
-          "ruleId": "60",
+          "ruleId": "BRAKE0060",
           "ruleIndex": 20
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Potentially dangerous attribute available for mass assignment"
+            "text": "Potentially dangerous attribute available for mass assignment."
           },
           "locations": [
             {
@@ -1444,13 +1508,13 @@
               }
             }
           ],
-          "ruleId": "60",
+          "ruleId": "BRAKE0060",
           "ruleIndex": 20
         },
         {
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Potentially dangerous attribute available for mass assignment"
+            "text": "Potentially dangerous attribute available for mass assignment."
           },
           "locations": [
             {
@@ -1463,13 +1527,13 @@
               }
             }
           ],
-          "ruleId": "60",
+          "ruleId": "BRAKE0060",
           "ruleIndex": 20
         },
         {
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "Potentially dangerous attribute available for mass assignment"
+            "text": "Potentially dangerous attribute available for mass assignment."
           },
           "locations": [
             {
@@ -1482,7 +1546,7 @@
               }
             }
           ],
-          "ruleId": "60",
+          "ruleId": "BRAKE0060",
           "ruleIndex": 20
         }
       ]
