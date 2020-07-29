@@ -5,7 +5,7 @@
     {
       "tool": {
         "driver": {
-          "name": "Brakeman",
+          "name": "Brakeman-6be5cc8",
           "informationUri": "https://brakemanscanner.org",
           "semanticVersion": "4.8.2",
           "rules": [
