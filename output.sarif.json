@@ -7,7 +7,7 @@
         "driver": {
           "name": "Brakeman",
           "informationUri": "https://brakemanscanner.org",
-          "semanticVersion": "4.9.0",
+          "semanticVersion": "4.9.1",
           "rules": [
             {
               "id": "BRAKE0102",
@@ -16,6 +16,10 @@
                 "text": "Checks for XSS in calls to content_tag."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/ruby-security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ)."
+              },
               "properties": {
                 "tags": [
                   "ContentTag"
@@ -29,6 +33,10 @@
                 "text": "Checks for versions with CSRF token forgery vulnerability (CVE-2020-8166)."
               },
               "helpUri": "https://groups.google.com/g/rubyonrails-security/c/NOjKiGeXUgw",
+              "help": {
+                "text": "More info: https://groups.google.com/g/rubyonrails-security/c/NOjKiGeXUgw.",
+                "markdown": "[More info](https://groups.google.com/g/rubyonrails-security/c/NOjKiGeXUgw)."
+              },
               "properties": {
                 "tags": [
                   "CSRFTokenForgeryCVE"
@@ -42,6 +50,10 @@
                 "text": "Checks for default routes."
               },
               "helpUri": "http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf",
+              "help": {
+                "text": "More info: http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf.",
+                "markdown": "[More info](http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf)."
+              },
               "properties": {
                 "tags": [
                   "DefaultRoutes"
@@ -55,6 +67,10 @@
                 "text": "Finds instances of possible command injection."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/command_injection/",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/command_injection/.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/command_injection/)."
+              },
               "properties": {
                 "tags": [
                   "Execute"
@@ -68,6 +84,10 @@
                 "text": "Checks for i18n XSS (CVE-2013-4491)."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/ruby-security-ann/pLrh6DUw998/bLFEyIO4k_EJ)."
+              },
               "properties": {
                 "tags": [
                   "I18nXSS"
@@ -81,6 +101,10 @@
                 "text": "Checks for JSON parsing vulnerabilities CVE-2013-0333 and CVE-2013-0269."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion",
+              "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion.",
+                "markdown": "[More info](https://groups.google.com/d/topic/rubyonrails-security/4_YvCpLzL58/discussion)."
+              },
               "properties": {
                 "tags": [
                   "JSONParsing"
@@ -94,6 +118,10 @@
                 "text": "Checks for mime type denial of service (CVE-2016-0751)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/9oLY_FCzvoc/w9oI9XxbFQAJ)."
+              },
               "properties": {
                 "tags": [
                   "MimeTypeDoS"
@@ -107,6 +135,10 @@
                 "text": "Checks for number helpers XSS vulnerabilities in certain versions."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/ruby-security-ann/9WiRn2nhfq0/2K2KRB4LwCMJ)."
+              },
               "properties": {
                 "tags": [
                   "NumberToCurrency"
@@ -120,6 +152,10 @@
                 "text": "Looks for calls to redirect_to with user input as arguments."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/redirect/",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/redirect/.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/redirect/)."
+              },
               "properties": {
                 "tags": [
                   "Redirect"
@@ -133,6 +169,10 @@
                 "text": "Warn about denial of service with render :text (CVE-2014-0082)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/LMxO_3_eCuc/ozGBEhKaJbIJ)."
+              },
               "properties": {
                 "tags": [
                   "RenderDoS"
@@ -146,6 +186,10 @@
                 "text": "Checks for session key length and http_only settings."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/session_setting/",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/session_setting/.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/session_setting/)."
+              },
               "properties": {
                 "tags": [
                   "SessionSettings"
@@ -159,6 +203,10 @@
                 "text": "Checks for CVE-2018-3760."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/ft_J--l55fM/7roDfQ50BwAJ)."
+              },
               "properties": {
                 "tags": [
                   "SprocketsPathTraversal"
@@ -172,6 +220,10 @@
                 "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion",
+              "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion.",
+                "markdown": "[More info](https://groups.google.com/d/topic/rubyonrails-security/DCNTNp_qjFM/discussion)."
+              },
               "properties": {
                 "tags": [
                   "SQLCVEs"
@@ -185,6 +237,10 @@
                 "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion",
+              "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion.",
+                "markdown": "[More info](https://groups.google.com/d/topic/rubyonrails-security/c7jT-EeN9eI/discussion)."
+              },
               "properties": {
                 "tags": [
                   "SQLCVEs"
@@ -198,6 +254,10 @@
                 "text": "Checks for several SQL CVEs."
               },
               "helpUri": "https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/ruby-security-ann/niK4drpSHT4/g8JW8ZsayRkJ)."
+              },
               "properties": {
                 "tags": [
                   "SQLCVEs"
@@ -211,6 +271,10 @@
                 "text": "Checks for versions with ActiveRecord symbol denial of service vulnerability."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/jgJ4cjjS8FE/BGbHRxnDRTIJ)."
+              },
               "properties": {
                 "tags": [
                   "SymbolDoSCVE"
@@ -224,6 +288,10 @@
                 "text": "Checks for XML denial of service (CVE-2015-3227)."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J)."
+              },
               "properties": {
                 "tags": [
                   "XMLDoS"
@@ -237,6 +305,10 @@
                 "text": "Checks for YAML parsing vulnerabilities (CVE-2013-0156)."
               },
               "helpUri": "https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion",
+              "help": {
+                "text": "More info: https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion.",
+                "markdown": "[More info](https://groups.google.com/d/topic/rubyonrails-security/61bkgvnSGTQ/discussion)."
+              },
               "properties": {
                 "tags": [
                   "YAMLParsing"
@@ -250,6 +322,10 @@
                 "text": "Checks for unescaped output in views."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/cross_site_scripting.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/cross_site_scripting)."
+              },
               "properties": {
                 "tags": [
                   "CrossSiteScripting"
@@ -263,6 +339,10 @@
                 "text": "Checks for versions with vulnerable sanitize and sanitize_css."
               },
               "helpUri": "https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J",
+              "help": {
+                "text": "More info: https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J.",
+                "markdown": "[More info](https://groups.google.com/d/msg/rubyonrails-security/4_QHo4BqnN8/_RrdfKk12I4J)."
+              },
               "properties": {
                 "tags": [
                   "SanitizeMethods"
@@ -276,6 +356,10 @@
                 "text": "Checks for default routes."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/default_routes/",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/default_routes/.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/default_routes/)."
+              },
               "properties": {
                 "tags": [
                   "DefaultRoutes"
@@ -289,6 +373,10 @@
                 "text": "Reports models which have dangerous attributes defined via attr_accessible."
               },
               "helpUri": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+              "help": {
+                "text": "More info: https://brakemanscanner.org/docs/warning_types/mass_assignment/.",
+                "markdown": "[More info](https://brakemanscanner.org/docs/warning_types/mass_assignment/)."
+              },
               "properties": {
                 "tags": [
                   "ModelAttrAccessible"
